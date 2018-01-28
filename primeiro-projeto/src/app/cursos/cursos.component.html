@@ -1,0 +1,18 @@
+<p>
+  Lista de cursos do portal {{ nomePortal }}
+</p>
+
+<app-curso-detalhe></app-curso-detalhe>
+
+<u>
+  
+  <!-- for (let i=0; i < this.cursos.length; i++){
+      let curso = this.cursos[i];
+    } -->
+
+    <!-- o ngFor funciona como o for mencionado acima,
+    a variavel curso será a variavel que receberá
+    o conteúdo do array cursos -->
+  <li *ngFor="let curso of cursos  ">{{ curso }}</li>
+
+</u>
