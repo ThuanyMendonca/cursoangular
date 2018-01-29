@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-data-binding',
   templateUrl: './data-binding.component.html',
@@ -17,13 +17,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
   // A declaração da variável como string é opcional
+  // VARIÁVEIS
   url: string = 'http://loiane.com';
   urlImagem = 'http://lorempixel.com/g/400/200/nature/';
   cursoAngular = true;
   valorAtual = '';
   valorSalvo;
   isMouseOver = false;
-  
+  nome = 'abc';
+  // Objeto
+  pessoa : any = {
+    nome: 'Delphine',
+    idade: '35'
+  }
+
+  nomeDoCurso = 'Angular';
+  valorInicial = 5;
+
   // Métodos
   getValor(){
     return 1;

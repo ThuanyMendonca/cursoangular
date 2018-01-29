@@ -66,16 +66,16 @@
 </section> -->
 
   <!-- EVENT BINDING -->
-  <section>
+  <!-- <section>
     <article>
       <h3>Event binding</h3>
-      <div>
+      <div> -->
         <!-- Para evento usa () -->
-        <button (click)="botaoClicado()" class="btn btn-primary">Me clique</button>
+        <!-- <button (click)="botaoClicado()" class="btn btn-primary">Me clique</button> -->
 
-        <br><br>
+        <!-- <br><br> -->
         <!-- No lugar de usar $event.target usa campoInput -->
-        <input type="text" (keyup)="onKeyUp($event)" 
+        <!-- <input type="text" (keyup)="onKeyUp($event)" 
         (keyup.enter)="salvarValor(campoInput.value)"
         (blur)="salvarValor($event.target.value)" #campoInput/>
 
@@ -94,4 +94,56 @@
 
       </div>
     </article>
+  </section> -->
+
+  <!-- <section class="two-way-binding">
+    <article>
+      <h3>Two way binding</h3>
+      <div>
+
+        <input type="text"
+        [value]="nome"
+        (input)="nome = $event.target.value"
+        >
+
+        <input type="text"
+        [ngModel]="nome"
+        (ngModelChange)="nome = $event"
+        >
+
+        <input type="text" [(ngModel)]="nome" />
+
+        <p>Você digitou: {{ nome }}</p>
+      </div>
+
+      <div>
+        <label >Nome:</label>
+        <input type="text" [(ngModel)]="pessoa.nome"/>
+        <label >Idade:</label>
+        <input type="text" [(ngModel)]="pessoa.idade"/>
+      </div>
+      <p>
+        Meu nome é: {{ pessoa.nome }} e eu tenho {{ pessoa.idade }} anos!
+      </p>
+    </article>
+  </section> -->
+
+  <section class="input-output-properties">
+    <article>
+      <h3>Input/Output Properties</h3>
+      <app-curso [nome]="nomeDoCurso"></app-curso>
+
+      <contador [valor]="valorInicial"></contador>
+    </article>
   </section>
+
+
+
+
+
+
+
+
+
+
+
