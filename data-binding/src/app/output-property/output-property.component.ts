@@ -4,14 +4,13 @@ import { Component, OnInit, Input,EventEmitter,Output } from '@angular/core';
   selector: 'contador',
   templateUrl: './output-property.component.html',
   styleUrls: ['./output-property.component.css']
+  // outputs: ['mudouValor']
 })
 export class OutputPropertyComponent implements OnInit {
   // Declaração de variáveis
-  @Input() 
-  valor = 0;
+  @Input() valor = 0;
   
-  @Output() 
-  mudouValor = new EventEmitter();
+  @Output() mudouValor = new EventEmitter();
 
   // Métodos
   incrementa(){

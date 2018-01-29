@@ -72,6 +72,7 @@ export class DataBindingComponent implements OnInit {
   onMudouValor(evento){
     console.log(evento.novoValor);
   }
+
   constructor() { }
 
   ngOnInit() {
