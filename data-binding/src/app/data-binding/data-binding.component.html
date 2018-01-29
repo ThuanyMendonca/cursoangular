@@ -2,7 +2,21 @@
 
   <article>
     <h3>Interpolation / Interpolação</h3>
-    <p>String renderizada com Interpolação {{ url }}</p>
+    <p>String renderizada com Interpolação: {{ url }}</p>
+    <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
+    <p>Resultado de 1 + 1 não é: {{ 1 + 1 + getValor() }}</p>
+    <p>Curtir o curso? {{ getCurtirCurso() }}</p>
+  </article>
+
+  <article>
+    <h3>Imagem</h3>
+    <img src="{{urlImagem}}"/>
+    <!-- Para utilizar a interpolação pode colocar
+    apenas colchetes como no exemplo abaixo, quando a tag 
+    tiver alguma propriedade para indicar um conteudo  -->
+    <img [src]="urlImagem"/>
+    <!-- = -->
+    <img bind-src="urlImagem"/>
   </article>
 
 </section>
