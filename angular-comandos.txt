@@ -1,0 +1,9 @@
+Angular:
+
+ng g c meu-component
+ng g s meu-servico
+ng g directive minha-diretiva
+ng g pipe meu-pipe
+ng g class minha-classe
+ng g interface minha-interface
+ng g enum meu-enum
