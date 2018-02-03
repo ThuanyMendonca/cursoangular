@@ -1,0 +1,11 @@
+Pré processadores:
+
+ng new meu-projeto --style=sass
+ng new meu-projeto --style=less
+ng new meu-projeto --style=styl
+
+Quando já existe um projeto: 
+
+ng set defaults.styleExt scss
+ng set defaults.styleExt less
+ng set defaults.styleExt styl
